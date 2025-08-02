@@ -30,7 +30,7 @@ class CustomImageCardNew extends StatelessWidget {
             children: [
               // Shadow for the book
               Positioned(
-                top: 22,
+                top: 20.5,
                 left: 33,
                 child: Container(
                   width: 123,
@@ -48,8 +48,8 @@ class CustomImageCardNew extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: 19,
-                left: 24.75,
+                top: 18.5,
+                left: 24.55,
                 child: Container(
                   width: 123,
                   height: 164,

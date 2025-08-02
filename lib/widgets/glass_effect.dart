@@ -10,12 +10,12 @@ class GlassEffect extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
+      borderRadius:  BorderRadius.circular(16),
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
         child: Container(
-          height: 210.h,
-          width: 190.w,
-          padding: EdgeInsets.all(16),
+          height: 185.h,
+          width: 150.w,
           decoration: BoxDecoration(
             // color: Colors.red,
             color: Colors.white.withOpacity(0.1),

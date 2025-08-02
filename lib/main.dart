@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0x3C50A2FF),
+      backgroundColor: Color(0xFFFFFFFF),
       body: Center(
         child: CustomImageCardNew(
           imageUrl:
