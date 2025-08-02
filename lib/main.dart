@@ -1,7 +1,11 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:new_book_design/widgets/custom_book_new.dart';
+
+import 'widgets/glass_effect.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +17,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(375, 812), // You can adjust this to match your design
+      designSize: const Size(375, 812),
+      // You can adjust this to match your design
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
@@ -34,16 +39,12 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          CustomImageCardNew(
-            imageUrl:
-            'https://wafilife-media.wafilife.com/uploads/2021/04/message-01-250x379.jpg',
-          ),
-
-        ],
+      backgroundColor: Color(0x3C50A2FF),
+      body: Center(
+        child: CustomImageCardNew(
+          imageUrl:
+          'https://wafilife-media.wafilife.com/uploads/2021/04/message-01-250x379.jpg',
+        ),
       ),
     );
   }
